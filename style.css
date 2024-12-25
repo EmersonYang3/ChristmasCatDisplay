@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: SuperFunky;
+    src: url("SuperFunky-lgmWw.ttf");
+}
+
+body {
+    background-color: #FFDAB9;
+}
+
+header {
+    background-color: #8FBC8F;
+    color: #FFFFFF;
+    font-family: SuperFunky;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.kitty-image-wrapper {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-right: 20px solid black;
+    border-bottom: 20px solid black;
+    border-radius: 15px;
+    transition: transform 0.3s ease, margin 0.3s ease, border-right 0.15s ease, border-bottom 0.15s ease;
+}
+
+.kitty-image {
+    width: 350px;
+    height: 300px;
+    background: #ff6961;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: -10px;
+}
+
+.kitty-image-wrapper:hover {
+    transform: scale(1.05);
+}
+
+.kitty-image-frame {
+    margin-top: -15px;
+    width: 90%;
+    height: 200px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    margin-top: 20px;
+    font-family: SuperFunky;
+    font-size: 1em;
+    color: #3dff3d;
+    text-align: center;
+}
